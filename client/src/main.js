@@ -1,10 +1,10 @@
 console.log("projectt");
 
+const baseUrl = "https://assignment-06-server.onrender.com";
+
 async function getPosts() {
   console.log("I am getPosts and I am about tp fetch data");
-  const response = await fetch(
-    "https://assignment-06-server.onrender.com/books"
-  );
+  const response = await fetch(`${baseUrl}/books`);
   console.log(response);
   const data = await response.json();
   console.log(data);
