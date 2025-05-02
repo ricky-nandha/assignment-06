@@ -2,7 +2,9 @@ console.log("projectt");
 
 async function getPosts() {
   console.log("I am getPosts and I am about tp fetch data");
-  const response = await fetch("http://localhost:8080/books");
+  const response = await fetch(
+    "https://assignment-06-server.onrender.com/books"
+  );
   console.log(response);
   const data = await response.json();
   console.log(data);
