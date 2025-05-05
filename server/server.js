@@ -6,7 +6,7 @@ const app = express();
 
 app.use(cors());
 
-const books = [
+const location = [
   {
     title: "New York",
     body: "is 3,392 miles away",
@@ -39,8 +39,8 @@ app.get("/", function (req, res) {
   res.json("Who invited you here! Show your ticket please!");
 });
 
-app.get("/books", (req, res) => {
-  res.json(books);
+app.get("/location", (req, res) => {
+  res.json(location);
 });
 const PORT = 8080;
 
